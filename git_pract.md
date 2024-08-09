@@ -53,3 +53,12 @@ git checkout -- ファイル名でワークツリーの変更を取り消す
 <img src="figs/git_checkout_bef.png" width="300">  
 - git checkout後  
 <img src="figs/git_checkout_aft.png" width="300">  
+
+git reset HEAD ファイル名でステージングエリアを最新コミットの状態にする(ワーキングエリアの状態はそのまま、ステージングが取り消されるイメージ)  
+<img src="figs/git_reset.png" width="300">  
+- git reset実行前のファイル(最新のコミット状態)
+<img src="figs/git_reset_org_and_bef.png" width="300">  
+- 変更したファイル(この状態でadd→resetをするとファイル状態はそのままにステージングエリアの状態は上の図に戻る)
+<img src="figs/git_reset_aft.png" width="300">  
+
+<img src="figs/git_image(git_checkout,reset).png" width="300">  
