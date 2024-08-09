@@ -62,3 +62,5 @@ git reset HEAD ファイル名でステージングエリアを最新コミッ�
 <img src="figs/git_reset_aft.png" width="300">  
 
 <img src="figs/git_image(git_checkout,reset).png" width="300">  
+
+### git管理のファイルの削除
