@@ -37,4 +37,14 @@ git commitでステージングエリアにあるファイルをローカルリ�
 
 <img src="figs/git_commit.png" width="300">  
 
+-mオプションをつけると1行でコミットメッセージまで完了できる  
+<img src="figs/git_commit_m.png" width="300">  
+
+コミット後の状態  
+<img src="figs/commit_result.png" width="300">  
+
 <img src="figs/git_image(git_commit).png" width="300">  
+
+### 変更の取り消し
+git checkoutやgit resetを使うことで変更前の状態に戻すことができる  
+
