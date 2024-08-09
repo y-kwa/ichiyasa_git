@@ -78,4 +78,10 @@ git rmでファイル削除とステージングエリアへの登録を同時�
 <img src="figs/gitignore_files.png" width="100">  
 
 <img src="figs/gitignore_aft.png" width="900"> 
-gitnore_test.txtが消えていることがわかる(gitの管理下から外れた)(pngが追加されているのはご愛嬌)   
+gitnore_test.txtが消えていることがわかる(gitの管理下から外れた)(pngが追加されているのはご愛嬌)  
+
+### gitの履歴の確認
+git logでコミット履歴を確認できる  
+<img src="figs/git_log.png" width="300">  
+表示内容は上から順にコミットハッシュ(コミットを識別するタグのようなもの)、コミットの実行者、コミット日時、コミットメッセージ  
+-pオプションでファイル差分などより詳細な内容を確認できる  
