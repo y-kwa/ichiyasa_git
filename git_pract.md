@@ -48,3 +48,8 @@ git commitでステージングエリアにあるファイルをローカルリ�
 ### 変更の取り消し
 git checkoutやgit resetを使うことで変更前の状態に戻すことができる  
 
+git checkout -- ファイル名でワークツリーの変更を取り消す
+- git checkout前  
+<img src="figs/git_checkout_bef.png" width="300">  
+- git checkout後  
+<img src="figs/git_checkout_aft.png" width="300">  
