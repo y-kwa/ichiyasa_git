@@ -1,8 +1,8 @@
 # Git練習用MD
-## (１番やさしいGit&GitHubの教科書使用)
+## １番やさしいGit&GitHubの教科書使用
 
 ### gitの構成
-ローカルなgitは作業を行うワークツリー、変更などを保存するローカルリポジトリ、ローカルリポジトリとワークツリーを繋ぐステージングエリアで構成される  
+ローカルのgitは作業を行うワークツリー、変更などを保存するローカルリポジトリ、ローカルリポジトリとワークツリーを繋ぐステージングエリアで構成される  
 
 <img src="figs/git_image(component).png" width="300">
 
@@ -24,7 +24,7 @@ git add ディレクトリ名でディレクトリ以下のファイルを全て
 
 ### ファイル差分の確認
 git diffコマンドでワークツリー-ステージングエリア間の差分を、--cachedオプションをつけることでステージングエリア-ローカルリポジトリ間の差分を確認することができる  
-<img src="figs/git_diff.png" width="600">  
+<img src="figs/git_diff.png" width="900">  
 
 <img src="figs/git_diff_cached.png" width="300">  
 
@@ -33,12 +33,12 @@ git diffコマンドでワークツリー-ステージングエリア間の差�
 ### ローカルリポジトリへの追加(commmit)
 git commitでステージングエリアにあるファイルをローカルリポジトリに追加  
 コマンドを実行するとコミットメッセージを書くためのエディタが開くのでコミットの内容を記述する  
-<img src="figs/commit_message.png" width="300">  
+<img src="figs/commit_message.png" width="400">  
 
 <img src="figs/git_commit.png" width="300">  
 
 -mオプションをつけると1行でコミットメッセージまで完了できる  
-<img src="figs/git_commit_m.png" width="300">  
+<img src="figs/git_commit_m.png" width="500">  
 
 コミット後の状態  
 <img src="figs/commit_result.png" width="300">  
@@ -50,16 +50,16 @@ git checkoutやgit resetを使うことで変更前の状態に戻すことが�
 
 git checkout -- ファイル名でワークツリーの変更を取り消す
 - git checkout前  
-<img src="figs/git_checkout_bef.png" width="300">  
+<img src="figs/git_checkout_bef.png" width="400">  
 - git checkout後  
-<img src="figs/git_checkout_aft.png" width="300">  
+<img src="figs/git_checkout_aft.png" width="400">  
 
 git reset HEAD ファイル名でステージングエリアを最新コミットの状態にする(ワーキングエリアの状態はそのまま、ステージングが取り消されるイメージ)  
-<img src="figs/git_reset.png" width="300">  
-- git reset実行前のファイル(最新のコミット状態)
-<img src="figs/git_reset_org_and_bef.png" width="300">  
+<img src="figs/git_reset.png" width="400">  
+- git reset実行前のファイル(最新のコミット状態)  
+<img src="figs/git_reset_org_and_bef.png" width="400">  
 - 変更したファイル(この状態でadd→resetをするとファイル状態はそのままにステージングエリアの状態は上の図に戻る)
-<img src="figs/git_reset_aft.png" width="300">  
+<img src="figs/git_reset_aft.png" width="400">  
 
 <img src="figs/git_image(git_checkout,reset).png" width="300">  
 
@@ -77,7 +77,7 @@ git rmでファイル削除とステージングエリアへの登録を同時�
 .gitnoreに以下の内容を記述  
 <img src="figs/gitignore_files.png" width="100">  
 
-<img src="figs/gitignore_aft.png" width="900"> 
+<img src="figs/gitignore_aft.png" width="400"> 
 gitnore_test.txtが消えていることがわかる(gitの管理下から外れた)(pngが追加されているのはご愛嬌)  
 
 ### gitの履歴の確認
