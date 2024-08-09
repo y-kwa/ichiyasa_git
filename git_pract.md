@@ -31,3 +31,10 @@ git diffコマンドでワークツリー-ステージングエリア間の差�
 <img src="figs/git_image(git_diff).png" width="300">  
 
 ### ローカルリポジトリへの追加(commmit)
+git commitでステージングエリアにあるファイルをローカルリポジトリに追加  
+コマンドを実行するとコミットメッセージを書くためのエディタが開くのでコミットの内容を記述する  
+<img src="figs/commit_message.png" width="300">  
+
+<img src="figs/git_commit.png" width="300">  
+
+<img src="figs/git_image(git_commit).png" width="300">  
