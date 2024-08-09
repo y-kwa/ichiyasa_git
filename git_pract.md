@@ -64,3 +64,18 @@ git reset HEAD ファイル名でステージングエリアを最新コミッ�
 <img src="figs/git_image(git_checkout,reset).png" width="300">  
 
 ### git管理のファイルの削除
+git rmでファイル削除とステージングエリアへの登録を同時に行う  
+<img src="figs/git_remove.png" width="900">  
+なぜかgit rm -r removeでディレクトリが消えなかった(ファイル名がremove_test.txtと一部被ってたのが原因？)  
+<img src="figs/git_remove_error.png" width="300">  
+
+### gitで管理しないファイルの作成
+.gitignoreファイルを作成することでgitで管理しないファイルを指定することができる  
+<img src="figs/gitignore_bef.png" width="900">  
+.gitignoreに何も登録していない状態
+
+.gitnoreに以下の内容を記述  
+<img src="figs/gitignore_files.png" width="100">  
+
+<img src="figs/gitignore_aft.png" width="900"> 
+gitnore_test.txtが消えていることがわかる(gitの管理下から外れた)(pngが追加されているのはご愛嬌)   
