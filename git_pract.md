@@ -1,6 +1,7 @@
 # Git練習用MD
 ## １番やさしいGit&GitHubの教科書使用
 
+## ローカル環境でのgit
 ### gitの構成
 ローカルのgitは作業を行うワークツリー、変更などを保存するローカルリポジトリ、ローカルリポジトリとワークツリーを繋ぐステージングエリアで構成される  
 
@@ -8,12 +9,12 @@
 
 ### gitの初期設定
 - 1.ディレクトリを作成
-- 2.git initでローカルリポジトリを作成  
+- 2.`git init`でローカルリポジトリを作成  
 最初の状態は以下の通り(現在の状態はgit statusで確認可能)  
 <img src="figs/first_stat.png" width="300">
 
 ### gitへファイルやディレクトリの追加
-- 1.git addでステージングエリアにファイルを追加  
+- 1.`git add`でステージングエリアにファイルを追加  
 追加されたファイルが緑で、未追加が赤で表示されている  
 <img src="figs/git_add.png" width="300">  
 git add ディレクトリ名でディレクトリ以下のファイルを全て指定可能  
@@ -23,7 +24,7 @@ git add ディレクトリ名でディレクトリ以下のファイルを全て
 
 
 ### ファイル差分の確認
-git diffコマンドでワークツリー-ステージングエリア間の差分を、--cachedオプションをつけることでステージングエリア-ローカルリポジトリ間の差分を確認することができる  
+`git diff`コマンドでワークツリー-ステージングエリア間の差分を、--cachedオプションをつけることでステージングエリア-ローカルリポジトリ間の差分を確認することができる  
 <img src="figs/git_diff.png" width="900">  
 
 <img src="figs/git_diff_cached.png" width="300">  
@@ -31,7 +32,7 @@ git diffコマンドでワークツリー-ステージングエリア間の差�
 <img src="figs/git_image(git_diff).png" width="300">  
 
 ### ローカルリポジトリへの追加(commmit)
-git commitでステージングエリアにあるファイルをローカルリポジトリに追加  
+`git commit`でステージングエリアにあるファイルをローカルリポジトリに追加  
 コマンドを実行するとコミットメッセージを書くためのエディタが開くのでコミットの内容を記述する  
 <img src="figs/commit_message.png" width="400">  
 
@@ -46,15 +47,15 @@ git commitでステージングエリアにあるファイルをローカルリ�
 <img src="figs/git_image(git_commit).png" width="300">  
 
 ### 変更の取り消し
-git checkoutやgit resetを使うことで変更前の状態に戻すことができる  
+`git checkout`や`git reset`を使うことで変更前の状態に戻すことができる  
 
-git checkout -- ファイル名でワークツリーの変更を取り消す
+`git checkout -- ファイル名`でワークツリーの変更を取り消す
 - git checkout前  
 <img src="figs/git_checkout_bef.png" width="400">  
 - git checkout後  
 <img src="figs/git_checkout_aft.png" width="400">  
 
-git reset HEAD ファイル名でステージングエリアを最新コミットの状態にする(ワーキングエリアの状態はそのまま、ステージングが取り消されるイメージ)  
+`git reset HEAD ファイル名`でステージングエリアを最新コミットの状態にする(ワーキングエリアの状態はそのまま、ステージングが取り消されるイメージ)  
 <img src="figs/git_reset.png" width="400">  
 - git reset実行前のファイル(最新のコミット状態)  
 <img src="figs/git_reset_org_and_bef.png" width="400">  
@@ -64,7 +65,7 @@ git reset HEAD ファイル名でステージングエリアを最新コミッ�
 <img src="figs/git_image(git_checkout,reset).png" width="300">  
 
 ### git管理のファイルの削除
-git rmでファイル削除とステージングエリアへの登録を同時に行う  
+`git rm`でファイル削除とステージングエリアへの登録を同時に行う  
 <img src="figs/git_remove.png" width="900">  
 なぜかgit rm -r removeでディレクトリが消えなかった(ファイル名がremove_test.txtと一部被ってたのが原因？)  
 <img src="figs/git_remove_error.png" width="300">  
@@ -81,7 +82,50 @@ git rmでファイル削除とステージングエリアへの登録を同時�
 gitnore_test.txtが消えていることがわかる(gitの管理下から外れた)(pngが追加されているのはご愛嬌)  
 
 ### gitの履歴の確認
-git logでコミット履歴を確認できる  
+`git log`でコミット履歴を確認できる  
 <img src="figs/git_log.png" width="300">  
 表示内容は上から順にコミットハッシュ(コミットを識別するタグのようなもの)、コミットの実行者、コミット日時、コミットメッセージ  
 -pオプションでファイル差分などより詳細な内容を確認できる  
+
+## githubとの連携
+### リモートリポジトリのフォークとクローン
+リモートリポジトリをフォークすることで元のリポジトリに影響を与えることなく変更することができる
+<img src="figs/fork_bef.png" width="900">
+
+<img src="figs/fork_aft.png" width="900">
+
+`git remote`でリモートリポジトリの情報を確認することができる(-vオプションでURLを表示)  
+<img src="figs/git_remote.png" width="300">
+
+### ブランチの作成
+`git branch ブランチ名`でブランチを作成することができる  
+`git branch`で今あるブランチを確認することができる(`git status`でも確認可能)  
+`git checkout ブランチ名`で指定ブランチに移動する  
+<img src="figs/git_branch.png" width="300">  
+
+### ブランチで使うコマンド類
+`git diff 比較したいブランチ名`で今あるブランチとの比較が行える  
+<img src="figs/git_diff_master.png" width="300">  
+
+`git push`でリモートリポジトリへ変更を反映させる  
+`git push プッシュ先のリモートリポジトリ名 プッシュしたいブランチ名`  
+※ このときリモートリポジトリの管理者がmasterブランチへマージしていいかを判断する(プルリクエストとレビュー)  
+
+- 1.リモートリポジトリへプッシュする
+<img src="figs/git_push.png" width="300">  
+- 2.プッシュ後はGitHub上にプルリクエストのためのボタンが表示される  
+<img src="figs/github_push.png" width="300">  
+- 3.プルリクエストのためにコメントを書く  
+<img src="figs/github_pullrequest.png" width="300">  
+- 4.プルリクエストが実行される  
+<img src="figs/github_pullrequest_result.png" width="300">  
+
+### 作成したブランチ内での作業(この見出しに意味はない)
+ブランチに関係するコマンドとか雑多なメモ  
+- `git checkout -b ブランチ名`でブランチ作成&そのブランチにチェックアウト  
+- ブランチ内でブランチを作成するとそのブランチからの派生となるので注意  
+<img src="figs/git_branch_note.png" width="300">  
+
+### ここはbranch_test2で書いてる内容です
+ちなみに上の見出し部分のブランチ名はbranch_test  
+あんま考えてないからこんなわかりにくい名前になるんです  
