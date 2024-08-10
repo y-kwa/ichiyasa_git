@@ -139,3 +139,10 @@ note:`git add -A` (または`git add -all`)で変更を加えたファイル全�
 <img src="figs/git_merge_branchside.png" width="900">  
 全体の作業内容はこんな感じ  
 <img src="figs/merge_image.png" width="300">  
+
+### ブランチの削除
+ローカルリポジトリのブランチの削除方法は2通り  
+- マージ済みのブランチを削除するには`git branch -d 削除したいブランチ名`  
+- マージ状況に関わらずブランチを削除するには`git branch -D 削除したいブランチ名`  
+<img src="figs/git_branch_d.png" width="300">  
+-Dオプション使わなくても消えてますね
