@@ -149,6 +149,8 @@ note:`git add -A` (または`git add -all`)で変更を加えたファイル全�
 
 ### コンフリクトの解消
 コンフリクト発生用のブランチを作ってメインブランチとコンフリクトさせてみる  
-- 2+2=4  
+- 2*2=4  
 メインブランチの記述内容
 <img src="figs/discribe_main.png" width="300">  
+コンフリクトブランチの記述内容
+<img src="figs/discribe_branch.png" width="300">  
