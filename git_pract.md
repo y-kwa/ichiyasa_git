@@ -129,3 +129,7 @@ gitnore_test.txtが消えていることがわかる(gitの管理下から外れ
 ### ここはbranch_test2で書いてる内容です
 ちなみに上の見出し部分のブランチ名はbranch_test  
 あんま考えてないからこんなわかりにくい名前になるんです  
+ということでここの内容をmainブランチに反映します  
+<img src="figs/git_checkout_b.png" width="300">  
+<img src="figs/git_add_a.png" width="300">  
+note:`git add -A` (または`git add -all`)で変更を加えたファイル全てをステージングエリアに追加  
