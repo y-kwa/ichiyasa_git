@@ -133,5 +133,9 @@ gitnore_test.txtが消えていることがわかる(gitの管理下から外れ
 <img src="figs/git_checkout_b.png" width="300">  
 <img src="figs/git_add_a.png" width="300">  
 note:`git add -A` (または`git add -all`)で変更を加えたファイル全てをステージングエリアに追加  
-`git merge マージしたいブランチ名`でブランチの内容をマージできる(ちなみにこのコメントはmainブランチで書いてます)  
+`git merge マージしたいブランチ名`でブランチの内容をマージできる(ちなみにここからのコメントはmainブランチで書いてます)  
 <img src="figs/git_merge_test.png" width="300">  
+`git merge main`とすると派生ブランチにメインブランチの内容を取り込める  
+<img src="figs/git_merge_branchside.png" width="900">  
+全体の作業内容はこんな感じ  
+<img src="figs/merge_image.png" width="300">  
