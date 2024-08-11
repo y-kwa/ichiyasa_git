@@ -1,1 +1,1 @@
-this baranch is conflict1
+Conflict resolution
