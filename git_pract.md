@@ -112,29 +112,29 @@ gitnore_test.txtが消えていることがわかる(gitの管理下から外れ
 ※ このときリモートリポジトリの管理者がmasterブランチへマージしていいかを判断する(プルリクエストとレビュー)  
 
 - 1.リモートリポジトリへプッシュする
-<img src="figs/git_push.png" width="300">  
+<img src="figs/git_push.png" width="900">  
 - 2.プッシュ後はGitHub上にプルリクエストのためのボタンが表示される  
-<img src="figs/github_push.png" width="300">  
+<img src="figs/github_push.png" width="900">  
 - 3.プルリクエストのためにコメントを書く  
-<img src="figs/github_pullrequest.png" width="300">  
+<img src="figs/github_pullrequest.png" width="900">  
 - 4.プルリクエストが実行される  
-<img src="figs/github_pullrequest_result.png" width="300">  
+<img src="figs/github_pullrequest_result.png" width="900">  
 
 ### 作成したブランチ内での作業(この見出しに意味はない)
 ブランチに関係するコマンドとか雑多なメモ  
 - `git checkout -b ブランチ名`でブランチ作成&そのブランチにチェックアウト  
 - ブランチ内でブランチを作成するとそのブランチからの派生となるので注意  
-<img src="figs/git_branch_note.png" width="300">  
+<img src="figs/git_branch_note.png" width="600">  
 
 ### ここはbranch_test2で書いてる内容です
 ちなみに上の見出し部分のブランチ名はbranch_test  
 あんま考えてないからこんなわかりにくい名前になるんです  
 ということでここの内容をmainブランチに反映します  
-<img src="figs/git_checkout_b.png" width="300">  
-<img src="figs/git_add_a.png" width="300">  
+<img src="figs/git_checkout_b.png" width="900">  
+<img src="figs/git_add_a.png" width="900">  
 note:`git add -A` (または`git add -all`)で変更を加えたファイル全てをステージングエリアに追加  
 `git merge マージしたいブランチ名`でブランチの内容をマージできる(ちなみにここからのコメントはmainブランチで書いてます)  
-<img src="figs/git_merge_test.png" width="300">  
+<img src="figs/git_merge_test.png" width="900">  
 `git merge main`とすると派生ブランチにメインブランチの内容を取り込める  
 <img src="figs/git_merge_branchside.png" width="900">  
 全体の作業内容はこんな感じ  
@@ -144,17 +144,17 @@ note:`git add -A` (または`git add -all`)で変更を加えたファイル全�
 ローカルリポジトリのブランチの削除方法は2通り  
 - マージ済みのブランチを削除するには`git branch -d 削除したいブランチ名`  
 - マージ状況に関わらずブランチを削除するには`git branch -D 削除したいブランチ名`  
-<img src="figs/git_branch_-d.png" width="300">  
+<img src="figs/git_branch_-d.png" width="900">  
 -Dオプション使わなくても消えてますね  
 
 ### コンフリクトの解消
 コンフリクト発生用のブランチを作ってメインブランチとコンフリクトさせてみる(なんかうまくいかなかったのでgpt君に聞いた内容でやってみる)  
 メインブランチでの設定  
-<img src="figs/discribe_main.png" width="300">  
+<img src="figs/discribe_main.png" width="900">  
 コンフリクト用ブランチでの設定  
-<img src="figs/discribe_branch.png" width="300">  
+<img src="figs/discribe_branch.png" width="900">  
 コンフリクトの発生  
-<img src="figs/occer_conflict.png" width="300">  
+<img src="figs/occer_conflict.png" width="900">  
 コンフリクトが発生するとVSコードだと下のような感じで表示されるので変更内容に書き換えてコミットしましょう  
 <img src="figs/conflict_files.png" width="900">  
 
@@ -167,3 +167,7 @@ note:`git add -A` (または`git add -all`)で変更を加えたファイル全�
 <img src="figs/create_repository2.png" width="900">  
 作成されるとこんな感じ  
 <img src="figs/result_create_repository.png" width="900">  
+- 2.`git push`でリモートリポジトリへ反映  
+<img src="figs/git_push_to_github.png" width="900">  
+反映されるとこんな感じ  
+<img src="figs/git_push_result.png" width="900">  
