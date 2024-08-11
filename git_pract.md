@@ -144,8 +144,16 @@ note:`git add -A` (または`git add -all`)で変更を加えたファイル全�
 ローカルリポジトリのブランチの削除方法は2通り  
 - マージ済みのブランチを削除するには`git branch -d 削除したいブランチ名`  
 - マージ状況に関わらずブランチを削除するには`git branch -D 削除したいブランチ名`  
-<img src="figs/git_branch_d.png" width="300">  
+<img src="figs/git_branch_-d.png" width="300">  
 -Dオプション使わなくても消えてますね  
 
 ### コンフリクトの解消
 コンフリクト発生用のブランチを作ってメインブランチとコンフリクトさせてみる(なんかうまくいかなかったのでgpt君に聞いた内容でやってみる)  
+メインブランチでの設定  
+<img src="figs/discribe_main.png" width="300">  
+コンフリクト用ブランチでの設定  
+<img src="figs/discribe_branch.png" width="300">  
+コンフリクトの発生  
+<img src="figs/occer_conflict.png" width="300">  
+コンフリクトが発生するとVSコードだと下のような感じで表示されるので変更内容に書き換えてコミットしましょう  
+<img src="figs/conflict_files.png" width="900">  
