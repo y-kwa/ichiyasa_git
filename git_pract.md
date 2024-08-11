@@ -1,5 +1,5 @@
 # Git練習用MD
-## １番やさしいGit&GitHubの教科書使用
+## いちばんやさしいGit&GitHubの教本使用
 
 ## ローカル環境でのgit
 ### gitの構成
