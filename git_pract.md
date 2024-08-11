@@ -157,3 +157,13 @@ note:`git add -A` (または`git add -all`)で変更を加えたファイル全�
 <img src="figs/occer_conflict.png" width="300">  
 コンフリクトが発生するとVSコードだと下のような感じで表示されるので変更内容に書き換えてコミットしましょう  
 <img src="figs/conflict_files.png" width="900">  
+
+### githubへのアップロード
+ローカルリポジトリで作成した内容をgithub上にpushします  
+- 1. github上でリモートリポジトリを作成する  
+画面右上のNew repositoryから新規作成
+<img src="figs/create_repository1.png" width="900">  
+名前を決めて作成する
+<img src="figs/create_repository2.png" width="900">  
+作成されるとこんな感じ  
+<img src="figs/result_create_repository.png" width="900">  
