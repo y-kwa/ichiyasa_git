@@ -135,3 +135,7 @@ gitnore_test.txtが消えていることがわかる(gitの管理下から外れ
 note:`git add -A` (または`git add -all`)で変更を加えたファイル全てをステージングエリアに追加  
 `git merge マージしたいブランチ名`でブランチの内容をマージできる(ちなみにこのコメントはmainブランチで書いてます)  
 <img src="figs/git_merge_test.png" width="300">  
+
+ ### 削除したブランチの復元
+ 間違えて必要なブランチを消しちゃった場合(READMEとかが消えちゃいました)  
+<img src="figs/branch_del.png" width="900">  
